@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de nascimento:
+                <input type="number" name="txtano" id="txtAno" min="1910" >
+            </p>
+            <p>Sexo: 
+                <br>
+                <input type="radio" name="sexo" id="sexMasc" checked>
+                <label for="sexMasc">Masculino</label>
+                <br>
+                <input type="radio" name="sexo" id="sexFem">
+                <label for="sexFem">Feminino</label>
+            </p>
+            <!--onclick: vai chamar o metodo selecionado do javascript pra quando eu clicar fazer algo  -->
+            <p><input type="button" value="Verificar" onclick="verificar()"></p>
+        </div>
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado!</p>
+            
+        </div>
+
+    </section>
+    <footer>
+        <!--&copy; faz o sinal de copyright  -->
+        <p>&copy;TharcioAndrade</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
